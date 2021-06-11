@@ -1,6 +1,6 @@
 <template>
   <div class="back-top">
-    <img src="~assets/img/community/rl_sgq_icon_fenxiang@2x.png" alt />
+    <img src="~assets/img/ziyuan.png" alt />
   </div>
 </template>
 
@@ -14,11 +14,11 @@ export default {
 .back-top {
   position: fixed;
   right: 8px;
-  bottom: 55px;
+  bottom: 60px;
 }
 
 .back-top img {
-  width: 43px;
-  height: 43px;
+  width: 38px;
+  height: 38px;
 }
 </style>
