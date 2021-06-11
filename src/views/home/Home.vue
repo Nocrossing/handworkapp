@@ -7,13 +7,7 @@
       </div>
     </nav-bar>
 
-    <scroll
-      class="content"
-      ref="scroll"
-      :probe-type="3"
-      @scroll="contentScroll"
-      :pull-up-load="true"
-    >
+    <scroll class="content" ref="scroll" :probe-type="3" @scroll="contentScroll">
       <home-swiper :banners="banners" />
       <home-king :recommends="recommends" />
       <div class="section-title">每日一逛</div>
@@ -40,7 +34,6 @@ import ThemeSection from "./childComps/ThemeSection.vue";
 
 import { getHomeMultidata, getHomeGoods } from "network/home";
 import { imgRefreshMixin, scrollTopMixin } from "common/mixins";
-import { debounce } from "common/ueils";
 
 export default {
   name: "Home",
@@ -91,13 +84,7 @@ export default {
 
     this.getHomeGoods("followd");
   },
-  mounted() {
-    //图片加载完成的事件监听
-    const refresh = debounce(this.$refs.scroll.refresh);
-    // this.$bus.$on("itemImageLoad", () => {
-    //   refresh();
-    // });
-  },
+  mounted() {},
   methods: {
     contentScroll(position) {
       // 1.判断BackTop是否显示
@@ -156,11 +143,6 @@ export default {
   left: 0;
   right: 0;
   box-sizing: border-box;
-}
-.tab-control-show {
-  position: relative;
-  top: 0.875rem;
-  z-index: 9;
 }
 .section-title {
   padding: 0.5rem 0 0.05rem 0.32rem;

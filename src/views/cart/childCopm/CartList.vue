@@ -37,8 +37,8 @@ export default {
 <style scoped="scoped">
 .cart-list-wrap {
   position: relative;
-  top: 44px;
-  bottom: 89px;
+  top: 0;
+  bottom: 0.98rem;
   background-color: rgb(255, 255, 255);
 }
 .content {

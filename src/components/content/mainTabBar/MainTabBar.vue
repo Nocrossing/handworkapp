@@ -18,7 +18,7 @@
     <tab-bar-item path="/cart">
       <img slot="item-icon" src="~assets/img/tabbar/common_tab_course_n@2x.png" />
       <img slot="item-icon-active" src="~assets/img/tabbar/common_tab_course_s@2x.png" alt />
-      <div slot="item-text">教程</div>
+      <div slot="item-text">购物车</div>
     </tab-bar-item>
     <tab-bar-item path="/mine">
       <img slot="item-icon" src="~assets/img/tabbar/common_tab_me_n@2x.png" />

@@ -162,7 +162,7 @@
       "price": "",
       "place": "230",
       "mark": "大理",
-      "image": "/static/img/rl_shang_pic1@2x.png"
+      "image": "./static/img/rl_shang_pic1@2x.png"
     },
     {
       "id": 2,
@@ -171,7 +171,7 @@
       "price": "",
       "place": "230",
       "mark": "大理",
-      "image": "/static/img/rl_shang_pic2@2x.png"
+      "image": "./static/img/rl_shang_pic2@2x.png"
     },
     {
       "id": 3,
@@ -189,7 +189,7 @@
       "price": "",
       "place": "230",
       "mark": "大理",
-      "image": "/static/img/rl_shang_pic4@2x.png"
+      "image": "./static/img/rl_shang_pic4@2x.png"
     }
   ]
 }

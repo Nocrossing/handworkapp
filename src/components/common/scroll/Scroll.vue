@@ -41,7 +41,7 @@ export default {
       });
     }
 
-    //3.监听scroll滚动到底部
+    //3.监听上拉事件
     if (this.pullUpLoad) {
       this.scroll.on("pullingUp", () => {
         this.$emit("pullingUp");
@@ -49,7 +49,7 @@ export default {
     }
   },
   methods: {
-    scrollTo(x, y, time = 300) {
+    scrollTo(x, y, time = 500) {
       this.scroll && this.scroll.scrollTo(x, y, time);
     },
     refresh() {

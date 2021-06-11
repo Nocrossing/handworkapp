@@ -27,7 +27,6 @@
 </template>
 
 <script>
-import BScroll from "better-scroll";
 import NavBar from "components/common/navbar/NavBar";
 import Scroll from "@/components/common/scroll/Scroll.vue";
 import TabControl from "@/components/content/tabControl/TabControl.vue";
@@ -35,12 +34,12 @@ import GoodsList from "@/components/content/goods/GoodsList.vue";
 
 import { getHomeMultidata, getHomeGoods } from "network/home";
 import { imgRefreshMixin, scrollTopMixin } from "common/mixins";
+
 export default {
   name: "Mall",
   mixins: [imgRefreshMixin, scrollTopMixin],
   components: {
     NavBar,
-    BScroll,
     Scroll,
     TabControl,
     GoodsList
@@ -57,7 +56,8 @@ export default {
       currentType: "followd",
       scroll: null,
       isTabFixed: false,
-      tabOffsetTop: 0
+      tabOffsetTop: 0,
+      itemImgLister: null
     };
   },
   computed: {
@@ -73,13 +73,18 @@ export default {
     this.getHomeGoods("new");
     this.getHomeGoods("essence");
   },
-  mounted() {
-    //图片加载完成的事件监听
-    const refresh = debounce(this.$refs.scroll.refresh);
-    // this.$bus.$on("itemImageLoad", () => {
-    //   refresh();
-    // });
+  activated() {
+    this.$scroll.scroll.scrollTo(0, this.saveY, 0);
+    this.$scroll.scroll.refresh();
   },
+  deactivated() {
+    //保存Y值
+    this.saveY = this.$refs.scroll.getScrollY();
+
+    //取消全局的事件监听
+    this.$bus.$off("itemImgLoad", this.itemImgLister);
+  },
+  mounted() {},
   methods: {
     //事件监听相关
     tabClick(index) {
@@ -152,5 +157,11 @@ export default {
   right: 0;
   overflow: hidden;
   /*overflow-y: scroll;*/
+}
+.tab-control-show {
+  position: relative;
+  top: -0.09rem;
+  background-color: #fff;
+  z-index: 9;
 }
 </style>
