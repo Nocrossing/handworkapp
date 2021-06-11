@@ -1,0 +1,46 @@
+@import "./normalize.css";
+
+:root {
+  --color-text: #333;
+  --color-light-text: #ff5978;
+  --color-tint: #f8f8f8;
+  --color-background: #fff;
+  --font-size: 14px;
+  --line-height: 1.5;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: calc(100vw / 3.75 / 2);
+}
+body {
+  font-size: 0.14rem;
+}
+.flex {
+  display: flex;
+}
+.clear-fix::after {
+  clear: both;
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+.clear-fix {
+  zoom: 1;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
