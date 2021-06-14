@@ -93,12 +93,14 @@ export default {
     //网络请求相关
     getHomeMultidata() {
       getHomeMultidata().then(res => {
+        console.log(res);
         this.banners = res.banners;
         this.recommends = res.recommends;
       });
     },
     getHomeGoods(type) {
       getHomeGoods(type).then(res => {
+        console.log(res);
         this.goods[type].push(...res[type]);
       });
     }

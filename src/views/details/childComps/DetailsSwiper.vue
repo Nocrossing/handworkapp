@@ -1,8 +1,8 @@
 <template>
   <swiper class="banner">
-    <swiper-item v-for="item in banners" :detailsItem="item">
+    <swiper-item>
       <a href>
-        <img :src="item.image" alt />
+        <img :src="banners.image" alt />
       </a>
     </swiper-item>
   </swiper>
@@ -19,9 +19,9 @@ export default {
   },
   props: {
     banners: {
-      type: Array,
+      type: Object,
       default() {
-        return [];
+        return {};
       }
     }
   }

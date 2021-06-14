@@ -35,20 +35,30 @@ export default {
   data() {
     return {
       id: null,
-      topBanner: [],
+      topBanner: {},
       goods: {}
     };
   },
   created() {
+    /**
+     * 对比分类ID并返回对应数据
+     * id:id
+     * data:json原始数据
+     * */
+    var queryDataId = function(id, data) {
+      for (var i = 0; i < data.length; i++) {
+        if (id == data[i].id) return data[i];
+      }
+    };
     //保存传入的id
     this.id = this.$route.params.id;
 
     //根据id请求详情数据
     getDetails(this.id).then(res => {
+      const detailsInfo = queryDataId(this.id, res);
       //获取顶部的banner
-      //console.log(res[0]);
-      this.topBanner = res;
-      this.goods = res[0];
+      this.topBanner = detailsInfo;
+      this.goods = detailsInfo;
     });
   },
   methods: {

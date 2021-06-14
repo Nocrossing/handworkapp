@@ -1,0 +1,41 @@
+{
+  "banners": [
+    {
+      "id": 1,
+      "name": "apple",
+      "image": "./static/img/rl_sy_banner@2x.png"
+    },
+    {
+      "id": 2,
+      "name": "orange",
+      "image": "./static/img/rl_sy_meiri_pic3@2x.png"
+    },
+    {
+      "id": 3,
+      "name": "banana",
+      "image": "./static/img/rl_sy_meiri_pic2@2x.png"
+    }
+  ],
+  "recommends": [
+    {
+      "id": 1,
+      "name": "看教程",
+      "image": "./static/img/home_jingangqu_kanjiaocheng_s@3x.png"
+    },
+    {
+      "id": 2,
+      "name": "热门活动",
+      "image": "./static/img/home_jingangqu_remen_s@3x.png"
+    },
+    {
+      "id": 3,
+      "name": "会员精选",
+      "image": "./static/img/home_jingangqu_huiyuan_s@3x.png"
+    },
+    {
+      "id": 3,
+      "name": "达人推荐",
+      "image": "./static/img/home_jingangqu_daren_s@3x.png"
+    }
+  ]
+}
