@@ -1,0 +1,110 @@
+{
+  "followd": [
+    {
+      "id": "01",
+      "userName": "张程力",
+      "portrait": "./static/img/rl_sgq_pic1@2x.png",
+      "decration": "一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人",
+      "img": [
+        "./static/img/rl_sgq_pic1@2x.png",
+        "./static/img/rl_sgq_pic2@2x.png",
+        "./static/img/rl_sgq_pic3@2x.png",
+        "./static/img/rl_sgq_pic4@2x.png",
+        "./static/img/rl_sgq_pic5@2x.png",
+        "./static/img/rl_sgq_pic6@2x.png"
+      ]
+    },
+    {
+      "id": "02",
+      "userName": "苦无",
+      "portrait": "./static/img/rl_sgq_pic7@2x.png",
+      "decration": "一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道",
+      "img": [
+        "./static/img/rl_sgq_pic7@2x.png",
+        "./static/img/rl_sgq_pic8@2x.png",
+        "./static/img/rl_sgq_pic9@2x.png"
+      ]
+    }
+  ],
+  "recommend": [
+    {
+      "id": "01",
+      "userName": "张程力",
+      "portrait": "./static/img/rl_sgq_pic1@2x.png",
+      "decration": "一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人",
+      "img": [
+        "./static/img/rl_sgq_pic5@2x.png",
+        "./static/img/rl_sgq_pic4@2x.png",
+        "./static/img/rl_sgq_pic3@2x.png",
+        "./static/img/rl_sgq_pic2@2x.png",
+        "./static/img/rl_sgq_pic1@2x.png",
+        "./static/img/rl_sgq_pic6@2x.png"
+      ]
+    },
+    {
+      "id": "02",
+      "userName": "苦无",
+      "portrait": "./static/img/rl_sgq_pic7@2x.png",
+      "decration": "一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道",
+      "img": [
+        "./static/img/rl_sgq_pic7@2x.png",
+        "./static/img/rl_sgq_pic8@2x.png",
+        "./static/img/rl_sgq_pic9@2x.png"
+      ]
+    }
+  ],
+  "new": [
+    {
+      "id": "01",
+      "userName": "张程力",
+      "portrait": "./static/img/rl_sgq_pic1@2x.png",
+      "decration": "一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人",
+      "img": [
+        "./static/img/rl_sgq_pic6@2x.png",
+        "./static/img/rl_sgq_pic4@2x.png",
+        "./static/img/rl_sgq_pic3@2x.png",
+        "./static/img/rl_sgq_pic1@2x.png",
+        "./static/img/rl_sgq_pic5@2x.png",
+        "./static/img/rl_sgq_pic2@2x.png"
+      ]
+    },
+    {
+      "id": "02",
+      "userName": "苦无",
+      "portrait": "./static/img/rl_sgq_pic7@2x.png",
+      "decration": "一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道",
+      "img": [
+        "./static/img/rl_sgq_pic7@2x.png",
+        "./static/img/rl_sgq_pic8@2x.png",
+        "./static/img/rl_sgq_pic9@2x.png"
+      ]
+    }
+  ],
+  "essence": [
+    {
+      "id": "01",
+      "userName": "张程力",
+      "portrait": "./static/img/rl_sgq_pic1@2x.png",
+      "decration": "一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人",
+      "img": [
+        "./static/img/rl_sgq_pic3@2x.png",
+        "./static/img/rl_sgq_pic2@2x.png",
+        "./static/img/rl_sgq_pic1@2x.png",
+        "./static/img/rl_sgq_pic4@2x.png",
+        "./static/img/rl_sgq_pic6@2x.png",
+        "./static/img/rl_sgq_pic5@2x.png"
+      ]
+    },
+    {
+      "id": "02",
+      "userName": "苦无",
+      "portrait": "./static/img/rl_sgq_pic7@2x.png",
+      "decration": "一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道，必须要有实有的时候一个人活着，何任何时，是不能无所事事，更不可枸人忧天，怨声载道",
+      "img": [
+        "./static/img/rl_sgq_pic7@2x.png",
+        "./static/img/rl_sgq_pic8@2x.png",
+        "./static/img/rl_sgq_pic9@2x.png"
+      ]
+    }
+  ]
+}

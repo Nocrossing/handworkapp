@@ -24,7 +24,7 @@
     "price": "",
     "place": "230",
     "mark": "大理",
-    "image": "/static/img/rl_shang_pic3@2x.png"
+    "image": "./static/img/rl_shang_pic3@2x.png"
   },
   {
     "id": 4,
@@ -34,5 +34,14 @@
     "place": "230",
     "mark": "大理",
     "image": "./static/img/rl_shang_pic4@2x.png"
+  },
+  {
+    "id": 5,
+    "title": "龙泉青瓷茶壶",
+    "text": "釉色均净饱满，表面质感细腻",
+    "price": "",
+    "place": "230",
+    "mark": "大理",
+    "image": "./static/img/rl_sy_hw1@2x.png"
   }
 ]
