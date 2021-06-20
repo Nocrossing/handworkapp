@@ -37,6 +37,6 @@ export default {
 }
 .cart-nav {
   color: #fff;
-  background-color: red;
+  background-color: var(--color-light-text);
 }
 </style>

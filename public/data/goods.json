@@ -37,7 +37,7 @@
       "image": "./static/img/rl_shang_pic4@2x.png"
     },
     {
-      "id": 2,
+      "id": 5,
       "title": "龙泉青瓷茶壶",
       "text": "釉色均净饱满，表面质感细腻",
       "price": "",
@@ -73,6 +73,136 @@
       "place": "230",
       "mark": "大理",
       "image": "./static/img/rl_shang_pic1@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic2@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic3@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic4@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_sy_hw1@2x.png"
+    }
+  ],
+  "new": [
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic1@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_sy_hw1@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic3@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic2@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic3@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic4@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_sy_hw1@2x.png"
+    }
+  ],
+  "essence": [
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic1@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_sy_hw1@2x.png"
+    },
+    {
+      "id": 2,
+      "title": "龙泉青瓷茶壶",
+      "text": "釉色均净饱满，表面质感细腻",
+      "price": "",
+      "place": "230",
+      "mark": "大理",
+      "image": "./static/img/rl_shang_pic3@2x.png"
     },
     {
       "id": 2,

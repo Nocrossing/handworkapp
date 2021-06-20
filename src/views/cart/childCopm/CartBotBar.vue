@@ -5,7 +5,7 @@
       <label for="check">全部</label>
     </div>
     <div>合计：{{totalPrice}}</div>
-    <div class="add">去结算{{checkLength}}</div>
+    <div class="add" @click="calcClick">去结算{{checkLength}}</div>
   </div>
 </template>
 
@@ -62,6 +62,11 @@ export default {
         //部分或全部选中
         this.cartList.forEach(item => (item.checked = true));
       }
+    },
+    calcClick() {
+      if (!this.isSelectAll) {
+        this.$toast.show("请选择需要购买的商品", 2000);
+      }
     }
   }
 };
@@ -88,7 +93,7 @@ export default {
   margin-right: 5px;
 }
 .add {
-  background-color: red;
+  background-color: var(--color-light-text);
   text-align: center;
   line-height: 50px;
   width: 100px;

@@ -73,8 +73,9 @@ export default {
       product.id = this.goods.id;
 
       //讲商品添加到购物车里
-      //this.$store.commit("addCart", product);
-      this.$store.dispatch("addCart", product);
+      this.$store.dispatch("addCart", product).then(res => {
+        this.$toast.show(res, 2000);
+      });
     },
     destroyed() {
       //取消全局的事件监听

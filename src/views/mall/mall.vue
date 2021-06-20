@@ -1,9 +1,11 @@
 <template>
-  <div class="mall">
+  <div id="mall">
     <nav-bar class="nav-bar">
-      <img slot="left" class="sgq_nav1_ss" src="~assets/img/community/rl_sgq_icon_sousuo@2x.png" />
-      <div slot="center" class="sgq_nav1_bt">手工圈</div>
-      <img slot="right" class="sgq_nav1_fb" src="~assets/img/community/rl_sgq_icon_fabu@2x.png" />
+      <div class="sy_sousuo" slot="center">
+        <input type="text" placeholder="花梨木 招财锦鲤" />
+        <img src="~assets/img/home/rl_sy_icon_sousuo@2x.png" />
+      </div>
+      <img slot="right" class="sgq_nav1_fb" src="~assets/img/home/rl_shang_icon_gwc@2x.png" />
     </nav-bar>
     <tab-control
       class="tab-control-show"
@@ -135,16 +137,49 @@ export default {
 </script>
 
 <style scoped>
+#mall {
+  height: 100vh;
+  position: relative;
+}
 .nav-bar {
   background-color: #fff;
+}
+.sy_sousuo {
+  position: relative;
+}
+.sy_sousuo input {
+  width: 6rem;
+  height: 0.54rem;
+  background: #f0f0f0;
+  border-radius: 0.27rem;
+  border: 0;
+  font-size: 0.24rem;
+  line-height: 0.54rem;
+  text-indent: 0.66rem;
+  display: block;
+}
+.sy_sousuo img {
+  width: 0.26rem;
+  height: 0.26rem;
+  position: absolute;
+  left: 0.3rem;
+  top: 0.14rem;
+}
+.content {
+  overflow: hidden;
+  position: absolute;
+  top: 0.88rem;
+  bottom: 0.98rem;
+  left: 0;
+  right: 0;
+  box-sizing: border-box;
 }
 .sgq_nav1_ss {
   width: 0.41rem;
   height: 0.41rem;
 }
 .sgq_nav1_fb {
-  width: 0.41rem;
-  height: 0.43rem;
+  width: 0.44rem;
 }
 .sgq_nav1_bt {
   font-size: 0.4rem;

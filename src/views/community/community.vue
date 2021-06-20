@@ -1,17 +1,10 @@
 <template>
-  <div id="home">
+  <div id="community">
     <nav-bar class="nav-bar">
       <img slot="left" class="sgq_nav1_ss" src="~assets/img/community/rl_sgq_icon_sousuo@2x.png" />
       <div slot="center" class="sgq_nav1_bt">手工圈</div>
       <img slot="right" class="sgq_nav1_fb" src="~assets/img/community/rl_sgq_icon_fabu@2x.png" />
     </nav-bar>
-    <tab-control
-      class="tab-control-show"
-      :titles="['关注','推荐','最新','精华']"
-      @tabClick="tabClick"
-      ref="tabControl1"
-      v-show="isTabFixed"
-    ></tab-control>
 
     <scroll
       class="content"
@@ -20,8 +13,8 @@
       @scroll="contentScroll"
       :pull-up-load="true"
     >
-      <tab-control :titles="['关注','推荐','最新','精华']" @tabClick="tabClick" ref="tabControl2" />
-      <goods-list :goods="showGoods" />
+      <tab-control :titles="['关注','推荐','最新','精华']" @tabClick="comTabClick" />
+      <post-list :post="showpost" />
     </scroll>
   </div>
 </template>
@@ -31,9 +24,11 @@ import BScroll from "better-scroll";
 import NavBar from "components/common/navbar/NavBar";
 import Scroll from "@/components/common/scroll/Scroll.vue";
 import TabControl from "@/components/content/tabControl/TabControl.vue";
-import GoodsList from "@/components/content/goods/GoodsList.vue";
+import PostList from "./childCopm/PostList.vue";
 
+import { getCommunity } from "network/community";
 import { imgRefreshMixin, scrollTopMixin } from "common/mixins";
+
 export default {
   name: "Community",
   mixins: [imgRefreshMixin, scrollTopMixin],
@@ -42,14 +37,56 @@ export default {
     BScroll,
     Scroll,
     TabControl,
-    GoodsList
+    PostList
   },
   data() {
     return {
       scroll: null,
       isTabFixed: false,
-      tabOffsetTop: 0
+      tabOffsetTop: 0,
+      post: {
+        followd: [],
+        recommend: [],
+        new: [],
+        essence: []
+      },
+      currentType: "followd"
     };
+  },
+  computed: {
+    showpost() {
+      return this.post[this.currentType];
+    }
+  },
+  created() {
+    this.getCommunity("followd");
+    this.getCommunity("recommend");
+    this.getCommunity("new");
+    this.getCommunity("essence");
+  },
+  methods: {
+    comTabClick(index) {
+      switch (index) {
+        case 0:
+          this.currentType = "followd";
+          break;
+        case 1:
+          this.currentType = "recommend";
+          break;
+        case 2:
+          this.currentType = "new";
+          break;
+        case 3:
+          this.currentType = "essence";
+          break;
+      }
+    },
+    //网络请求
+    getCommunity(type) {
+      getCommunity(type).then(res => {
+        this.post[type].push(...res[type]);
+      });
+    }
   }
 };
 </script>

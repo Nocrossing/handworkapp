@@ -31,7 +31,10 @@ export default {
     this.scroll = new BScroll(this.$refs.wrapper, {
       click: true,
       probeType: this.probeType,
-      pullUpLoad: this.pullUpLoad
+      pullUpLoad: this.pullUpLoad,
+      mouseWheel: true, //开启鼠标滚轮
+      disableMouse: false, //启用鼠标拖动
+      disableTouch: false //启用手指触摸
     });
 
     //2.监听滚动的位置
